@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} Исследование процентного соотношения романских и германских языков, изучаемых в школе как иностранных {% endblock %}
+{% block content %}
+	<table>
+        <tr>
+            <td>Средний возраст</td>
+            <td>{{ all_info['age_mean'] }}</td>
+        </tr>
+        <tr>
+            <td>Минимальный возраст</td>
+            <td>{{ all_info['age_min'] }}</td>
+        </tr>
+        <tr>
+            <td>Максимальный возраст</td>
+            <td>{{ all_info['age_max'] }}</td>
+        </tr>
+		<tr>
+            <td>Больше всего людей из города</td>
+            <td>{{ all_info['city_max'] }}</td>
+        </tr>
+        <tr>
+            <td>Средний ответ на вопрос 1</td>
+            <td>{{ all_info['q1_mean'] }}</td>
+        </tr>
+    </table>
+{% endblock %}

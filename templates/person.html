@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ person.name }}{% endblock %}
+
+{% block content %}
+    <table class="table">
+        <tr>
+            <td>Имя</td>
+            <td>{{ person.name }}</td>
+        </tr>
+        <tr>
+            <td>Возраст</td>
+            <td>{{ person.age }}</td>
+        </tr>
+        <tr>
+            <td>Пол</td>
+            <td>{{ person.gender }}</td>
+        </tr>
+		<tr>
+            <td>Город, в котором учился в школе</td>
+            <td>{{ person.schocity }}</td>
+        </tr>
+		<tr>
+            <td>Город, в котором учился в университете</td>
+            <td>{{ person.unicity }}</td>
+        </tr>
+    </table>
+{% endblock %}

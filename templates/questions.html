@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %} Исследование процентного соотношения изучения английского, немецкого, французского, испанского {% endblock %}
+{% block content %}
+	<form class="container" action="/process">
+		<fieldset>
+		<b>Как Вас зовут?</b><br>
+        <input type="text" name="name"><br>
+        <b>Сколько Вам лет?</b><br>
+        <input type="number" name="age"><br>
+		<b>Ваш пол</b><br>
+        <input type="radio" name="gender" value="м" checked> Мужской<br>
+		<input type="radio" name="gender" value="ж"> Женский<br>
+		<input type="radio" name="gender" value="другой"> Другой<br>
+		<b>Какой Ваш родной язык?</b><br>
+		<input type="radio" name="flang" value="русский" checked> Русский<br>
+		<input type="radio" name="flang" value="другой"> Другой<br>
+		<b>Из какого Вы города?</b><br>
+        <input type="text" name="city"><br>
+		<b>Изучали ли Вы в школе английский язык?</b><br>
+		<input type="radio" name="sceng" value="да" checked> Да<br>
+		<input type="radio" name="sceng" value="нет"> Нет<br>
+		<b>Изучали ли Вы в школе немецкий язык?</b><br>
+		<input type="radio" name="scger" value="да" checked> Да<br>
+		<input type="radio" name="scger" value="нет"> Нет<br>
+		<b>Изучали ли Вы в школе французский язык?</b><br>
+		<input type="radio" name="scfr" value="да" checked> Да<br>
+		<input type="radio" name="scfr" value="нет"> Нет<br>
+		<b>Изучали ли Вы в школе испанский язык?</b><br>
+		<input type="radio" name="scesp" value="да" checked> Да<br>
+		<input type="radio" name="scesp" value="нет"> Нет<br>
+		<b>Изучали ли Вы в университете английский язык?</b><br>
+		<input type="radio" name="uneng" value="да" checked> Да<br>
+		<input type="radio" name="uneng" value="нет"> Нет<br>
+		<b>Изучали ли Вы в университете немецкий язык?</b><br>
+		<input type="radio" name="unger" value="да" checked> Да<br>
+		<input type="radio" name="unger" value="нет"> Нет<br>
+		<b>Изучали ли Вы в университете французский язык?</b><br>
+		<input type="radio" name="unfr" value="да" checked> Да<br>
+		<input type="radio" name="unfr" value="нет"> Нет<br>
+		<b>Изучали ли Вы в университете испанский язык?</b><br>
+		<input type="radio" name="unesp" value="да" checked> Да<br>
+		<input type="radio" name="unesp" value="нет"> Нет<br>
+		</fieldset>
+		<p><input class="submit" type="submit" name="submit" value="Отправить"></p>
+    </form>
+{% endblock %}
