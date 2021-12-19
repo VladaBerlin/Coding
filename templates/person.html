@@ -17,12 +17,22 @@
             <td>{{ person.gender }}</td>
         </tr>
 		<tr>
-            <td>Город, в котором учился в школе</td>
-            <td>{{ person.schocity }}</td>
+            <td>Город</td>
+            <td>{{ person.city }}</td>
         </tr>
 		<tr>
-            <td>Город, в котором учился в университете</td>
-            <td>{{ person.unicity }}</td>
+            <td>Язык</td>
+            <td>{{ person.language }}</td>
         </tr>
-    </table>
+	</table>
+	<div>
+		{% if person_prev %}
+		<a href={{ person_prev }} button type="button" class="btn btn-primary">Предыдущий</a>
+        {% endif %}
+		{% if person_next %}
+		<a href={{ person_next }} button type="button" class="btn btn-primary">Следующий</a>
+        {% endif %}
+		<!-- <a href={{ person_prev }} button type="button" class="btn btn-primary">Предыдущий</a> -->
+		<!-- <a href={{ person_next }} button type="button" class="btn btn-primary">Следующий</a> -->
+	</div>
 {% endblock %}

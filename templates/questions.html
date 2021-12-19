@@ -3,19 +3,36 @@
 {% block content %}
 	<form class="container" action="/process">
 		<fieldset>
-		<b>Как Вас зовут?</b><br>
-        <input type="text" name="name"><br>
-        <b>Сколько Вам лет?</b><br>
-        <input type="number" name="age"><br>
-		<b>Ваш пол</b><br>
-        <input type="radio" name="gender" value="м" checked> Мужской<br>
-		<input type="radio" name="gender" value="ж"> Женский<br>
-		<input type="radio" name="gender" value="другой"> Другой<br>
-		<b>Какой Ваш родной язык?</b><br>
-		<input type="radio" name="flang" value="русский" checked> Русский<br>
-		<input type="radio" name="flang" value="другой"> Другой<br>
-		<b>Из какого Вы города?</b><br>
-        <input type="text" name="city"><br>
+		<h4>Анкета информанта</h4>
+		<div class="row">
+			<div class="col-md-4">Имя</div>
+			<div class="col-md-4"><input type="text" name="name"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">Возраст</div>
+			<div class="col-md-4"><input type="number" name="age"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">Гендер</div>
+			<select name="gender" class="col-md-4">
+				<option value="male">м</option>
+				<option value="female">ж</option>
+				<option value="other">другой</option>
+			</select>
+		</div>
+		<div class="row">
+			<div class="col-md-4">Родной язык</div>
+			<select name="flang" class="col-md-4">
+				<option value="russian">русский</option>
+				<option value="other">другой</option>
+			</select>
+		</div>
+		<div class="row">
+			<div class="col-md-4">Город</div>
+				<div class="col-md-4"><input type="text" name="city"></div>
+			</select>
+		</div>
+		<h4>Вопросы</h4>
 		<b>Изучали ли Вы в школе английский язык?</b><br>
 		<input type="radio" name="sceng" value="да" checked> Да<br>
 		<input type="radio" name="sceng" value="нет"> Нет<br>
